@@ -1,0 +1,101 @@
+/* Content Start */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Headings h1 h2 h3 h4 h5 h6 */
+
+h4{
+    color:white;
+    margin:0;
+}
+
+.main-nav {
+    background: rgb(28, 184, 142);
+    height:70px;
+    display:grid;
+    
+}
+
+
+/* ================= Main nav content ================= */
+
+.main-logo{
+    display:none;
+}
+.nav-heading{
+    display:none;
+}
+.form-container{
+    justify-self:center;
+    display: flex;
+    align-items: center;
+
+}
+
+#user-form{
+    width:300px;
+}
+
+#search{
+    border:none;
+    border-radius: 15px;
+    height:30px;
+    width:100%;
+}
+
+/* ================= Side nav container ================== */
+#side-nav{
+    width:200px;
+    background-color:grey;
+    height:100vh;
+}
+img{
+    width:100%;
+    height:100%;
+    
+}
+.profile-img{
+    width:200px;
+    height:200px;
+    box-sizing:border-box;
+    position:relative;
+}
+.shadow {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 -10px 0 0 rgba(231, 76, 141, 0.8);
+}
+
+.main-heading{
+    width:200px;
+    background-color: rgb(39,39,39);
+}
+
+/* =================== Media Queries Desktop ====================== */
+@media(min-width:700px){
+    .main-nav{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main-logo{
+        display:block;
+        border-right: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-self:start;
+        padding-left:10px;
+        width:200px;
+    }
+    
+    .nav-heading{
+        display:block;
+        border-left: 1px solid white;
+        justify-self:end;
+        display: flex;
+        align-items: center;
+        padding:0 1em;
+    }
+}
